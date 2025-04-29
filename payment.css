@@ -1,0 +1,163 @@
+/* style properties applied is same as style properties applied in project.css and login.css */
+body{
+    background-color:aquamarine;
+    padding: 0px;
+    margin: 0px;
+
+  }
+  p{
+    color:blue;
+    font-size: 20px;
+    font-style: oblique;
+  }
+  hr{
+    border: 1px dashed black;
+  }
+
+
+.box{
+
+  box-sizing: border-box;
+ max-width:500px;
+  height:auto;
+  background-color:aliceblue;
+  margin:auto;
+  margin-top:5px;
+  padding: 10px;
+  overflow: hidden; 
+  margin-bottom:15px;
+  justify-content: center;
+  align-items: center;
+}
+header{
+  background-color: rgb(255, 191, 0);;
+  width:600px;
+  height:50px;
+  font-size: 40px;
+  z-index:3;
+}
+img{
+  width:600px;
+  height:50%;
+  float:left;
+}
+section{
+  padding:20px;
+}
+.navbar {
+         width:100%;
+    
+          background-color:orange;
+          font-family: sans-serif;
+          align-items: center;
+          justify-content:space-between;
+          display:flex;
+        }
+
+        ul {
+          flex-direction: row;
+          list-style: none;
+          display:flex;
+          margin-right: 100px;
+        }
+
+        ul>li>a { 
+          padding: 0px 9px;
+          color: white;
+          font-size: 12px;
+        }
+      
+         ul li i{
+          padding:10px;
+         } 
+         ul>li>div {
+          padding: 0px 9px;
+          color: white;
+          justify-content:space-around;
+          align-items: center;
+          font-size: 16px;
+        }
+  .box a{
+    position:relative;
+    left:70px;
+  }      
+        
+       
+.dropdown .dropbtn {
+  background-color:rgb(147, 225, 147);
+  padding: 16px;
+  font-size: 16px;
+  margin: 0px;
+  color:aliceblue;
+  border: none;
+  inline-size: auto;
+  border-radius: 25px;
+  
+}
+
+.dropdown {
+  position:relative;
+  display: inline-block;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:lightgoldenrodyellow;
+  width: 200px;
+  height:300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 10;
+  
+}
+.img1{
+  width:250px;
+  height:70px;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: rgb(132, 236, 27);}
+
+.dropdown:hover .dropdown-content {display:block;}
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: lightpink;
+}
+header1::-webkit-scrollbar {
+  display: none;
+}
+input[type=submit]{
+    width:35%;
+    height:30px;
+     border: 0ch;
+     margin:5px;
+     font-size: 15px;
+     position: relative;
+    
+     transition:0.1s ease-out;
+     border-radius: 3px;
+     background-color:greenyellow;
+
+}
+input[type=submit]:hover{
+  box-shadow: 0px 12px 20px 0px rgba(21, 200, 15, 0.62);
+}
+
+input[type=search]{
+  width:400px;
+  height:50px;
+  font-size: 20px;
+  right:60px;
+  padding:10px;
+  position:relative;
+  border-radius:10px;
+}

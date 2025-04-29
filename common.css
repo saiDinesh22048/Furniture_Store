@@ -1,0 +1,249 @@
+/* style properties applied is same as style properties applied to project.css */
+body{ 
+    
+    padding: 0px;
+    margin: 0px;
+  }
+ 
+section{
+  padding:20px;
+}
+.navbar {
+         width:100%;
+    
+          background-color:orange;
+          font-family: sans-serif;
+          align-items: center;
+          justify-content:space-between;
+          display:flex;
+        }
+
+        ul {
+          flex-direction: row;
+          list-style: none;
+          display:flex;
+          margin-right: 100px;
+        }
+
+        ul>li>a { 
+          padding: 0px 9px;
+          color: white;
+          font-size: 12px;
+        }
+      
+         ul li i{
+          padding:10px;
+         } 
+         ul>li>div {
+          padding: 0px 9px;
+          color: white;
+          justify-content:space-around;
+          align-items: center;
+          font-size: 16px;
+        }
+      
+        
+       
+.dropdown .dropbtn {
+  background-color:rgb(147, 225, 147);
+  padding: 16px;
+  font-size: 16px;
+  margin: 0px;
+  color:aliceblue;
+  border: none;
+  inline-size: auto;
+  border-radius: 25px;
+  
+}
+
+.dropdown {
+  position:relative;
+  display: inline-block;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:lightgoldenrodyellow;
+  width: 200px;
+  height:300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 10;
+  
+}
+.img1{
+  width:250px;
+  height:70px;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: rgb(132, 236, 27);}
+
+.dropdown:hover .dropdown-content {display:block;}
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: lightpink;
+}
+
+
+
+
+input[type=search]{
+  width:400px;
+  height:50px;
+  font-size: 20px;
+  right:60px;
+  padding:10px;
+  position:relative;
+  border-radius:10px;
+}
+.gallery {
+  margin: 5px;
+   overflow: hidden;
+   width:300px;
+
+}
+
+.gallery:hover {
+  border: 1px solid lightseagreen;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5), 0 8px 22px 0 rgba(0, 0, 0, 0.40);
+}
+
+.gallery img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  transition-timing-function: ease-out;
+  transition: 1s;
+  
+
+}
+.gallery img:hover{
+  
+  transform: scale(1.1);
+  
+  }
+
+.desc {
+  padding: 15px;
+  background-color:antiquewhite;
+  text-decoration: none;
+  height:auto;
+  border-radius: 10px;
+}
+.container{
+      border:1px solid  greenyellow;
+      grid-template-columns:auto auto auto auto;
+      display:grid;
+      
+      background-color:wh;
+      justify-content: space-around;
+    margin-top: 10px;
+ }
+    
+    button{
+padding:8px;
+margin-top: 5px;
+width:110px;
+border: none;
+background-color:yellow;
+text-align: center;
+box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5), 0 8px 22px 0 rgba(0, 0, 0, 0.40); filter:opacity(85%);
+transition: 0.3s ease-in-out;
+}
+button:hover{
+  width:120px;
+ 
+}
+.conta
+{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+}
+.btn
+{
+width: 50px;
+height: 50px;
+background-color: #fafafa;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left: 2em;
+margin-right: 1em;
+cursor: pointer;
+transition: all 0.3s;
+border-radius: 10px;
+}
+i.fa
+{
+font-size: 44px;
+}
+#fb
+{
+color: #006fff;
+text-shadow: 0 0 30px #006fff;
+}
+#ig
+{
+color: #ff5f40;
+text-shadow: 0 0 30px #ff5f40;
+}
+#tw
+{
+color: #00acff;
+text-shadow: 0 0 30px #00acff;
+}
+.btn.fb-btn
+{
+box-shadow: 0 20px 20px -17px rgba(0,111,255,0.53);
+}
+.btn.fb-btn:hover
+{
+transform: scale(1.2);
+box-shadow: 0 30px 45px -15px rgba(0,111,255,0.65);
+}
+.btn.ig-btn
+{
+box-shadow: 0 20px 20px -17px rgba(255,16,39,0.5);
+}
+.btn.ig-btn:hover
+{
+transform: scale(1.2);
+box-shadow: 0 30px 45px -15px rgba(255,16,39,0.57);
+}
+.btn.tw-btn
+{
+box-shadow: 0 20px 20px -17px rgba(0,255,255,0.53);
+}
+.btn.tw-btn:hover
+{
+transform: scale(1.2);
+box-shadow: 0 30px 45px -15px rgba(0,111,255,0.6);
+}
+.footer{
+ width:97%;
+ height:auto;
+ margin: 10px;
+ background-color:lightgray;
+ justify-content: center;
+  align-items: center;
+  padding: 15px;
+  text-align: center;
+  z-index: -3;
+}
+hr{
+  width: 100%;
+  height: 2px;
+  background-color:darkgray;
+}

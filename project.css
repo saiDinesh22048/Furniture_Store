@@ -1,0 +1,406 @@
+* {
+    padding: 0px;
+    margin: 0px;
+  }                     
+  
+
+  /*css properties for navigation bar  to make it  sticky and flex container */
+  .navbar {
+   width:100%;
+   height:3%;
+    position:sticky;
+    top:0px;
+    font-family: sans-serif;
+    align-items: center;
+    justify-content:space-between;
+    display:flex;
+  z-index: 10;
+  }
+ /* making list of items to be in the flex in an order */
+  ul {
+    flex-direction: row;
+    list-style: none;
+    display:flex;
+    margin-right: 100px;
+  }
+
+  ul>li>a { 
+    padding: 0px 9px;
+    color: white;
+    font-size: 12px;
+  }
+
+   ul li i{
+    padding:10px;
+   } 
+   ul>li>div {
+    padding: 0px 9px;
+    color: white;
+    justify-content:space-around;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  /* style for dropdown button in navbar */
+ 
+.dropdown .dropbtn {
+background-color:blanchedalmond;
+padding: 16px;
+font-size: 16px;
+margin: 0px;
+color:aliceblue;
+border: none;
+inline-size: auto;
+border-radius: 25px;
+
+}
+/* style for dropdown to display content in inline-block */
+.dropdown {
+position:relative;
+display:inline-block;
+z-index: 11;
+}
+/* style for dropdown content */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color:lightgoldenrodyellow;
+width: 200px;
+height:300px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 17;
+
+}
+
+/* style for anchor tag in dropdown content */
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+/* style applied to anchor tag after hovering */
+.dropdown-content a:hover {background-color: orange;}
+/* style to display dropdown content by hovering on dropdown*/
+.dropdown:hover .dropdown-content {display:block;}
+
+/* style applied to dropdown button by hovering on dropdown  */
+.dropdown:hover .dropbtn {
+background-color:blanchedalmond;
+}
+/* style applied input type search */
+input[type=search]{
+width:400px;
+height:50px;
+font-size: 20px;
+right:60px;
+padding:10px;
+position:relative;
+border-radius:10px;
+}
+/* style applied to video container */
+.dj{
+position: relative;
+display: flex;
+}
+/* style applid to video */
+video{
+height:90vh;
+width: 100vw;
+object-fit: cover;
+z-index:-5;
+filter:brightness(70%)
+
+}
+section2{
+height:5%;
+width:100%;
+}
+/* style applid to  container having scrolling image */
+section2 img{
+width:1090px;
+height: 100px;
+}
+/* style applied to image and text items of grid container */
+.gallery {
+margin: 5px;
+overflow: hidden;
+
+}
+
+.gallery:hover {
+border: 1px solid lightseagreen;
+box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.5), 0 5px 15px 0 rgba(0, 0, 0, 0.40);
+}
+
+.gallery img {
+width: 300px;
+height: 300px;
+border-radius: 50%;
+transition-timing-function: ease-out;
+transition: 1s;
+
+
+}
+.gallery img:hover{
+
+transform: scale(1.1);
+
+}
+/* style applied to text item of grid container */
+.desc {
+padding: 15px;
+background-color: aliceblue;
+text-decoration: none;
+height:auto;
+border-radius: 10px;
+}
+/* style applied to big box which is also a grid container of these small grids which contain image and text */
+.container{
+border:1px solid  greenyellow;
+grid-template-columns:auto;
+display:grid;
+grid-auto-flow: column;
+background-color:wh;
+justify-content: space-around;
+margin-top: 10px;}
+
+/* style for container of grid for scrolling text */
+.container2{
+
+position: absolute;
+width:400px;
+top:150px;
+left:700px;
+background-color:inherit;
+padding: 5px;
+}
+/* style for grid which have scrolling text as items */
+.container2 header {
+display:grid;
+width: 300px;
+height:300px;
+position: relative;
+
+left:100px;
+align-items: center;
+grid-auto-flow:rows;
+background-color: inherit;
+overflow-x: auto;
+z-index:2;}
+/* style for container of grid for scrolling images */
+.container1{
+
+position: absolute;
+width:400px;
+top:150px;
+left:300px;
+background-color:inherit;
+padding: 5px;
+}
+  /* style for container of grid for scrolling images */
+.container1 header {
+display:grid;
+width: 300px;
+height:300px;
+position: relative;
+
+left:100px;
+align-items: center;
+grid-auto-flow:column ;
+background-color:inherit;
+overflow-x: auto;
+z-index:2;
+
+}
+/* style for image items of grid  */
+.items1{
+width:285px;
+height:285px;
+background-color:inherit;
+cursor:none;
+border-radius: 100px;
+margin-right: 295px;
+box-shadow: 0px 0px 10px 2px rgba(204, 197, 193, 0.62);
+animation:dj1 12s ease-out infinite;
+}
+/* style for text items of grid  */
+.items2{
+width:285px;
+height:285px;
+background-color:inherit;
+color:red;
+text-shadow:0px 6px 10px  rgb(147, 225, 196);
+font-style: oblique;
+filter: brightness(100%);
+margin-bottom: 295px;
+font-size:50px;
+animation:dj2 12s ease-out infinite;
+
+}
+
+/* animation keyframes for scrolling of image items horizontally */
+@keyframes dj1{
+0%{
+transform: translate(-0px);
+}
+13%{
+transform: translate(-580px);
+}
+33%{
+transform: translate(-580px);
+}
+46%{
+transform: translate(-1160px);
+}
+66%{
+transform: translate(-1160px);
+}
+66.00000000000001%{
+transform: translate(-0px);
+
+}
+100%{
+transform: translate(-0px);
+
+}
+}
+/* animation keyframes for scrolling of text items vertically */
+@keyframes dj2{
+0%{
+transform: translateY(-0px);
+}
+13%{
+transform: translateY(-580px);
+}
+33%{
+transform: translateY(-580px);
+}
+46%{
+transform: translateY(-1160px);
+}
+66%{
+transform: translateY(-1160px);
+}
+66.00000000000001%{
+transform: translateY(-0px);
+
+}
+100%{
+transform: translateY(-0px);
+
+}
+}
+/* style for text in scrolling text items of grid */
+.text{
+text-align: center;
+padding:15px;
+}
+/* style for grid for not displaying scrollbar while scrolling */
+header::-webkit-scrollbar {
+display: none;
+}
+/* style for button in text section of grid */
+button{
+padding:8px;
+margin-top: 5px;
+width:110px;
+border: none;
+background-color:yellow;
+text-align: center;
+box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5), 0 8px 22px 0 rgba(0, 0, 0, 0.40); filter:opacity(85%);
+
+}
+button:hover{
+width:120px;
+
+}
+/* style for container containing flex of icon  */
+.conta
+{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+}
+/* style for buttons containing icons */
+.btn
+{
+width: 50px;
+height: 50px;
+background-color: #fafafa;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left: 2em;
+margin-right: 1em;
+cursor: pointer;
+transition: all 0.3s;
+border-radius: 10px;
+}
+/* style for each of */
+i.fa
+{
+font-size: 44px;
+}
+#fb
+{
+color: #006fff;
+text-shadow: 0 0 30px #006fff;
+}
+#ig
+{
+color: #ff5f40;
+text-shadow: 0 0 30px #ff5f40;
+}
+#tw
+{
+color: #00acff;
+text-shadow: 0 0 30px #00acff;
+}
+.btn.fb-btn
+{
+box-shadow: 0 20px 20px -17px rgba(0,111,255,0.53);
+}
+.btn.fb-btn:hover
+{
+transform: scale(1.2);
+box-shadow: 0 30px 45px -15px rgba(0,111,255,0.65);
+}
+.btn.ig-btn
+{
+box-shadow: 0 20px 20px -17px rgba(255,16,39,0.5);
+}
+.btn.ig-btn:hover
+{
+transform: scale(1.2);
+box-shadow: 0 30px 45px -15px rgba(255,16,39,0.57);
+}
+.btn.tw-btn
+{
+box-shadow: 0 20px 20px -17px rgba(0,255,255,0.53);
+}
+/* style to icon buttons by hovering on them */
+.btn.tw-btn:hover
+{
+transform: scale(1.2);
+box-shadow: 0 30px 45px -15px rgba(0,111,255,0.6);
+}
+/* style for footer section */
+.footer{
+width:97%;
+height:auto;
+margin: 10px;
+background-color:lightgray;
+justify-content: center;
+align-items: center;
+padding: 15px;
+text-align: center;
+z-index: -3;
+}
+/* style for hr tag in footer section */
+hr{
+width: 100%;
+height: 2px;
+background-color:darkgray;
+}

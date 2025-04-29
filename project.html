@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="project.css">          <!--imported css file of the project-->
+
+</head>
+<body>
+  <!-- created a navbar of orange color-->
+
+<div class="navbar" style="background-color:orange;">
+
+          <!--creating dropdown button having the dropdown-content-->
+
+          <div class="dropdown">
+            <button class="dropbtn"><i class="fa fa-list-ul" style="font-size:35px;color:orange;"></i></button>
+            <div class="dropdown-content">
+                <a  href="#" class="active"><i class="fa fa-fw fa-home" style="font-size:25px;"></i> Home </a>        
+                <a href="#nalavada"><i class="fa fa-fw fa-envelope" style="font-size:25px;"></i> Contact</a> 
+                <a href="login.html"
+                ><i class="fa fa-fw fa-user" style="font-size:25px;"></i> Login</a>
+          
+      
+              </div>
+              </div>
+
+              <!--Adding different icons on navbar-->
+
+              <div><a href="login.html"><i class="fa fa-user-circle" style="font-size:36px; position:relative; right:200px;"></i></a></div>
+              <div>
+                <input type="search" placeholder="search......."  ><i class="fa fa-fw fa-search" style="font-size:36px; position:relative; right:60px;"></i>
+              </div>
+            <ul>
+              <li><i class="fa fa-heart" style="font-size:36px;color:orange"></i></li>
+              <li><i class="fa fa-shopping-cart" style="font-size:36px"></i></li>
+            </ul>
+            </div>
+
+            
+            <!--creating one section having multiple dropdown buttons of different available items-->
+
+            <section class="navbar" style="background-color:blanchedalmond; position:relative; position:sticky;top:68px; z-index: 5;">
+              <ul style="margin:10px; position:relative; left:525px">
+              <li><div class="dropdown">
+                <button class="dropbtn" style="background-image: url('cupboard.jpg'); width:100px;height:50px; background-size: cover; box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5), 0 8px 22px 0 rgba(0, 0, 0, 0.40); filter:opacity(85%);"><font color="black"">cupboards</font></button>
+                <div class="dropdown-content">
+                    <a  href="cupboard.html" class="active"> Airing cupboard </a>        
+                    <a href="cupboard.html">Built-in cupboard</a> 
+                    <a href="cupboard.html">Linen cupboard</a>
+            </div>
+            </div></li>
+            <li><div class="dropdown">
+              <button class="dropbtn" style="background-image: url('doublecot.jpg');  width:100px;height:50px; background-size:contain; box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5), 0 8px 22px 0 rgba(0, 0, 0, 0.40); filter:opacity(80%);"><font color="black"> cots</font></button>
+              <div class="dropdown-content">
+                  <a  href="cots.html" class="active"> Single Size Cot</a>        
+                  <a href="cots.html">Double Size Cot</a> 
+                  
+          </div>
+          </div></li>
+          <li><div class="dropdown">
+            <button class="dropbtn" style="background-image: url('sofas.jpg'); background-size:12cqh;  width:100px;height:50px; box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5), 0 8px 22px 0 rgba(0, 0, 0, 0.40);"><font color="da" size="5px">sofas</font></button>
+            <div class="dropdown-content">
+              <a  href="sofas.html" class="active">Wooden Sofas</a>        
+                  <a href="sofas.html">Corner Sofa</a> 
+                  <a href="sofas.html"
+                  > Sofa bed</a>
+        
+                
+        </div>
+        </div></li>
+        <li><div class="dropdown">
+          <button class="dropbtn" style="background-image: url('tables.jpg'); width:100px;height:50px; background-size: cover; background-size: cover;  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5), 0 8px 22px 0 rgba(0, 0, 0, 0.40); filter:opacity(80%);"><font color="black">tables</font></button>
+          <div class="dropdown-content">
+            <a  href="#" class="active">Dining Room Table</a>        
+                  <a href="tables.html">Bar Table</a> 
+                  <a href="tables.html"
+                  > Console Table</a>
+                  <a href="tables.html">Vanity Table</a>
+                  <a href="tables.html">Accent Table</a>
+                  
+      </div>
+      </div></li> 
+          </ul>
+          </section>
+
+          <!--embedding the  background video-->
+
+        <section class="dj">
+          <video src="carp.mp4"  autoplay muted loop></video>
+
+          <!--creating one container in which grid and its items(images) will slide automatically -->
+
+          <div class="container1">
+    
+            <header>
+              <div><a href="cupboard.jpg"><img src="cupboard.jpg" class="items1" id="puka"></a></div>
+              <div><a href="sofas.jpg"><img src="sofas.jpg" class="items1" id="kavin"></a></div>
+              <div><a href="doublecot.jpg"><img src="doublecot.jpg" class="items1" id="raghav"></a></div>
+      
+              
+          </header>
+
+          </div>
+
+          <!--creating another container in which grid and its items(text) will slide automatically-->
+
+          <div class="container2">
+    
+            <header>
+              <div class="items2">World Class Cupbords with Affordable Prices</div>
+              <div class="items2"> 30% Discount on Sofas </div>
+              <div class="items2">High Quality Furnitures </div>
+      
+              
+          </header>
+
+          </div>
+    
+      
+      </section> 
+      <section2>
+        <marquee><img src="images.png" ></marquee>// scrolling image tag
+<p align="center" style="font-size:25px; color:goldenrod;"> AVAILABLE ITEMS</p> 
+
+<!--creating big container inside we can have multiple grids with two grid items one item is image and other is text-->
+
+<div class="container">
+  <a  href="cots.html">
+<div class="gallery">
+ 
+    <img src="doublecot.jpg" alt="Cinque Terre" width="600px" height="400px"></a>
+  
+   <div class="desc">Doublecot<br>starting from Rs.30,000/-<br><a href="cots.html"><font color=orange face="algerian" >SHOP NOW</font></a></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="tables.jpg" alt="Forest" width="600px" height="400px">
+  </a>
+  <div class="desc">Tables<br>starting from Rs.3000/- only<br><a href="tables.html"><font color=orange face="algerian" >SHOP NOW</font></a></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="sofas.html">
+    <img src="sofas.jpg" alt="Northern Lights" width="600px" height="400px">
+  </a>
+  <div class="desc">Sofas<br>starting from Rs.15,000/-<br><a href="sofas.html"><font color=orange face="algerian" >SHOP NOW</font></a></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="cupboard.html">
+    <img src="cupboard.jpg" alt="Mountains" width="600px" height="400px">
+  </a>
+  <div class="desc">
+    Cupboards<br>starting from Rs.20,000/-<br><a href="cupboard.html"><font color=orange face="algerian" >SHOP NOW</font></a>
+  </div>
+</div>
+</div>
+</section2>
+<div>
+  <img src="delivarytag.png" width=100% height="20%" style="margin-bottom:30px;margin-top:30px;">
+</div>
+<p style="font-size:30px; color:goldenrod; margin-bottom: 10px;">TOP PICKS</p>
+
+<!--creating big container inside we can have multiple grids with two grid items one item is image and other is text-->
+
+<div class="container">
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="topcupboard.jpg" alt="cupboard" width="600px" height="400px">
+    </a>
+    <div class="desc">German four door cupbord<br><del> Rs.45,000/-</del> Rs.32,000/-<br>EMI starts from Rs.3,800/-<br><a href="#"><button style="margin-right:40px;">ADD TO CART</button></a><a href="payment.html"><button>BUY NOW</button></a></div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="topbed.avif" alt="tables" width="600px" height="400px">
+    </a>
+    <div class="desc">Indonesian browny Teak doublecot<br><del> Rs.65,000/-</del> Rs.44,000/-<br>EMI starts from Rs.4,800/-<br><a href="#"><button style="margin-right:40px;">ADD TO CART</button></a><a href="payment.html"><button>BUY NOW</button></a></div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="toptable.avif" alt="Northern Lights" width="600px" height="400px">
+    </a>
+    <div class="desc">Classic study Table<br><del> Rs.15,500/-</del> Rs.9,000/- <br>EMI starts from Rs.1,200/-<br><a href="#"><button style="margin-right:40px;">ADD TO CART</button></a><a href="payment.html"><button>BUY NOW</button></a></div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="#">
+      <img src="topsofa.avif" alt="Mountains" width="600px" height="400px">
+    </a>
+    <div class="desc">
+      Emirates 5 Seater Sofa<br><del> Rs.54,000/-</del> Rs.48,000/-<br>EMI starts from Rs.4,600/-<br><a href="#"><button style="margin-right:40px;">ADD TO CART</button></a><a href="payment.html"><button>BUY NOW</button></a>
+    </div>
+  </div>
+  </div>
+  </section2> 
+  <br>
+  <p align="center" style="font-size:25px; color:goldenrod;">FOLLOW US ON</p>
+  <br>
+
+  <!--creating a flex and its items which are icons(imported from external css file)-->
+
+  <div class="conta">
+    <div class="btn fb-btn">
+    <i class="fa fa-facebook" aria-hidden="true" id="fb"></i>
+    </div>
+    <div class="btn ig-btn">
+    <a href="https://www.instagram.com/dj_dinesh2.o/#"><i class="fa fa-instagram" aria-hidden="true" id="ig"></i></a>
+    </div>
+    <div class="btn tw-btn">
+    <i class="fa fa-twitter" aria-hidden="true" id="tw"></i>
+    </div>
+    <div class="btn tw-btn">
+    <i class="fa fa-github" aria-hidden="true" id="tw"></i>
+    </div>
+    <div class="btn tw-btn">
+    <i class="fa fa-youtube" aria-hidden="true" id="tw"></i>
+    </div>
+    </div> 
+    <br>
+    <br>
+    <p align="center" style="font-size:25px; color:goldenrod;">WE ACCEPT</p>
+    <div>
+      <img src="payments.png" style="margin-left:375px; margin-top: 10px;">
+    </div>
+
+    <!--creating the footer with about us,contact us and other sections-->
+
+    <div class="footer">
+      <p>ABOUT US<br>
+        <br>HELP<br><br>SERVICES<br><br>CONTACT US<br><br><font size="3px" color="" id="nalavada">+91 8688780652<br>sd3005130@gmail.com<br>old town,Repalle<br>Guntur,Andhra pradesh</font></p>
+      <br>
+      <hr>
+      <br>
+      <br
+      <p>@ copy right SR wood works All rights reserved</p>
+      <br>
+    </div>
+             
+</body>
+</html>
+        

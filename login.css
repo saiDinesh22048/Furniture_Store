@@ -1,0 +1,232 @@
+/* for navigation bar all styles are same as in the home page of this project */
+body{
+    padding: 0px;
+    margin: 0px;
+
+  }
+  p{
+    color:blue;
+    font-size: 20px;
+    font-style: oblique;
+  }
+
+/* styles for input types button text and password */
+input[type=button],input[type=text],input[type=password]{
+    width:42%;
+    height:30px;
+     border:1px solid yellow;
+     font-size: 15px;
+     border-radius: 8px;
+     transition:0.1s ease-out;
+    font-style: oblique;
+     box-shadow: 0px 12px 20px 0px rgba(200, 86, 15, 0.62);
+}
+/* styles apply to input type text and password on hover */
+input[type=text]:hover,input[type=password]:hover{
+  width: 45%;
+    height:35px;
+}
+/* styles apply to input type submit on hover */
+input[type=submit]:hover{
+  width: 28%;
+    height:35px;
+}
+/* styles for submit input type*/
+input[type=submit]{
+    width:25%;
+    height:30px;
+     border:2px solid rgb(255, 191, 0);
+     margin:5px;
+     font-size: 15px;
+     position: relative;
+     left:35px;
+     font-style: oblique;
+     transition:0.1s ease-out;
+     border-radius: 8px;
+     background-color:orange;
+     box-shadow: 0px 12px 20px 0px rgba(200, 86, 15, 0.62);
+}
+/* style for big container box containing form */
+.box{
+
+  box-sizing: border-box;
+  background-color:rgb(255, 237, 183);
+ max-width:600px;
+  height:450px;
+  margin:auto;
+  border-radius: 25px;
+  margin-top:100px;
+  overflow: hidden; 
+  margin-bottom:90px;
+  box-shadow: 0px 12px 20px 4px rgba(222, 145, 98, 0.62);
+  
+}
+/* style for nav bar contents already written in project.css */
+header{
+  background-color: rgb(255, 191, 0);;
+  width:600px;
+  height:50px;
+  font-size: 40px;
+  z-index:3;
+}
+img{
+  width:600px;
+  height:50%;
+  float:left;
+}
+section{
+  padding:20px;
+}
+.navbar {
+         width:100%;
+         height:3%;
+          background-color:orange;
+          font-family: sans-serif;
+          align-items: center;
+          justify-content:space-between;
+          display:flex;
+        }
+
+        ul {
+          flex-direction: row;
+          list-style: none;
+          display:flex;
+          margin-right: 100px;
+        }
+
+        ul>li>a { 
+          padding: 0px 9px;
+          color: white;
+          font-size: 12px;
+        }
+      
+         ul li i{
+          padding:10px;
+         } 
+         ul>li>div {
+          padding: 0px 9px;
+          color: white;
+          justify-content:space-around;
+          align-items: center;
+          font-size: 16px;
+        }
+  .box a{
+    position:relative;
+    left:70px;
+  }      
+        
+       
+.dropdown .dropbtn {
+  background-color:rgb(147, 225, 147);
+  padding: 16px;
+  font-size: 16px;
+  margin: 0px;
+  color:aliceblue;
+  border: none;
+  inline-size: auto;
+  border-radius: 25px;
+  
+}
+
+.dropdown {
+  position:relative;
+  display: inline-block;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:lightgoldenrodyellow;
+  width: 200px;
+  height:300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 10;
+  
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: rgb(132, 236, 27);}
+
+.dropdown:hover .dropdown-content {display:block;}
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: lightpink;
+}
+header1::-webkit-scrollbar {
+  display: none;
+}
+
+input[type=search]{
+  width:400px;
+  height:50px;
+  font-size: 20px;
+  right:60px;
+  padding:10px;
+  position:relative;
+  border-radius:10px;
+}
+.container1{
+position: absolute;
+width:300px;
+height: 300px;
+top:300px;
+left:750px;
+overflow: hidden;
+background-color:inherit;
+padding: 2px;
+}
+.container1 header1 {
+  display:grid;
+  width: 300px;
+  height:280px;
+  position: relative;
+  align-items: center;
+  grid-auto-flow:row ;
+  background-color:inherit;
+  overflow-x: auto;
+  z-index:2;
+}
+.items1{
+    width:285px;
+    height:285px;
+    background-color:inherit;
+
+    margin-bottom: 295px;
+    font-size:50px;
+    animation:dj1 12s ease-out infinite;
+
+}
+@keyframes dj1{
+  0%{
+    transform: translateY(-0px);
+  }
+  13%{
+    transform: translateY(-580px);
+  }
+  33%{
+    transform: translateY(-580px);
+  }
+  46%{
+    transform: translateY(-1160px);
+  }
+66%{
+    transform: translateY(-1160px);
+  }
+  66.00000000000001%{
+    transform: translateY(-0px);
+
+  }
+  100%{
+    transform: translateY(-0px);
+
+  }
+}
